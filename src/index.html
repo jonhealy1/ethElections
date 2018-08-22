@@ -10,10 +10,22 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container" style="width: 650px;">
+
+      <header class="jumbotron">
+          <div class="container">
+              <div class="row row-header">
+                  <div class="col-12 col-sm-6">
+                      <h1>Solid Voting</h1>
+                      <p>Secure voting you can trust. Powered by Ethereum.</p>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+    <div class="container" style="width: 1250px;">
       <div class="row">
-        <div class="col-lg-12">
-          <h1 class="text-center">Election Results</h1>
+        <div class="col-lg-6">
+          <h1 class="text-left">Election Results</h1>
           <hr/>
           <br/>
           <div id="loader">
@@ -36,12 +48,43 @@
               <div class="from-group">
                 <label for="candidatesSelect">Select Candidate</label>
                 <select class="form-control" id="candidatesSelect">
-        
                 </select>
-              </div>
+              </div><br>
               <button type="submit" class="btn btn-primary">Vote</button>
               <hr />
             </form>
+            <!--
+            <form onSubmit="App.castVote(); return false;">
+                <div class="from-group">
+                  <label for="candidatesSelect">Add Candidate</label>
+                  <select class="form-control" id="candidatesAdd">
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+                <hr />
+            </form>
+            -->
+            <form onSubmit="App.addCandidate(); return false;">
+            <div class="form-group row">
+                <label form="date" class="col-md-12 col-form-label"
+                    >Add Candidate</label>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" id="candidatesAdd" 
+                        name="date" placeholder="Candidate Name">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+                <hr />
+            </form>
+
+
+
+
+
+
+
+
+
             <p id="accountAddress" class="text-center"></p>
           </div>
         </div>
