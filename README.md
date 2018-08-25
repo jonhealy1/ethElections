@@ -29,7 +29,7 @@ Prequisites:
   2. Adding an issue or candidate was supposed to cost Ether above the transaction fees.
   3. I wanted to have Voters answer general knowledge questions about either the candidates or the issues in order to be delegated votes.
 
-
+Testing: While this project is running type: truffle test
 
 
 
