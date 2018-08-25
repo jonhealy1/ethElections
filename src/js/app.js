@@ -1,5 +1,4 @@
-//import { default as Web3} from 'web3';
-//import { default as contract } from 'truffle-contract'
+
 
 App = {
   web3Provider: null,
@@ -91,16 +90,13 @@ App = {
       var candidatesSelect3 = $('#candidatesSelect3');
       candidatesSelect3.empty();
 
-      var candidatesSelectI = $('#candidatesSelectI');
-      candidatesSelectI.empty();
-
       var candidatesAdd = $('#candidatesAdd');
       candidatesAdd.empty();
 
       
 
 
-
+ 
       for (var i = 1; i <= candidatesCount; i++) {
         electionInstance.candidates(i).then(function(candidate) {
           var id = candidate[0];
@@ -114,12 +110,11 @@ App = {
           // Render candidate ballot option
           var candidateOption = "<option value='" + id + "' >" + name + "</ option>"
          // issuesSelect.append(candidateOption);
-
+          content.show(); //put this here for testing
 
           candidatesSelect.append(candidateOption);
           candidatesSelect2.append(candidateOption);
           candidatesSelect3.append(candidateOption);
-          candidatesSelectI.append(candidateOption);
         });
 
         
@@ -132,7 +127,7 @@ App = {
         $('#vote1').hide();
       }
       loader.hide();
-      content.show();
+     // content.show();
       return electionInstance.issuesCount();
     }).catch(function(error) {
       console.warn(error);
@@ -149,7 +144,7 @@ App = {
         $('#vote2').hide();
       }
       loader.hide();
-      content.show();
+     // content.show();
     }).catch(function(error) {
       console.warn(error);
     });
@@ -165,7 +160,7 @@ App = {
         $('#vote3').hide();
       }
       loader.hide();
-      content.show();
+      //content.show();
     }).catch(function(error) {
       console.warn(error);
     });
@@ -179,8 +174,8 @@ App = {
       return instance.vote(candidateId, { from: App.account });
     }).then(function(result) {
       // Wait for votes to update
-      $("#content").hide();
-      $("#loader").show();
+    //  $("#content").hide();
+   //   $("#loader").show();
     }).catch(function(err) {
       console.error(err);
     });
@@ -192,8 +187,8 @@ App = {
       return instance.vote2(candidateId, { from: App.account });
     }).then(function(result) {
       // Wait for votes to update
-      $("#content").hide();
-      $("#loader").show();
+    //  $("#content").hide();
+     // $("#loader").show();
     }).catch(function(err) {
       console.error(err);
     });
@@ -205,8 +200,8 @@ App = {
       return instance.vote3(candidateId, { from: App.account });
     }).then(function(result) {
       // Wait for votes to update
-      $("#content").hide();
-      $("#loader").show();
+     // $("#content").hide();
+     // $("#loader").show();
     }).catch(function(err) {
       console.error(err);
     });
@@ -218,8 +213,8 @@ App = {
       return instance.addCandidate(candidateId, { from: App.account });
     }).then(function(result) {
       // Wait for votes to update
-      $("#content").hide();
-      $("#loader").show();
+     // $("#content").hide();
+     // $("#loader").show();
     }).catch(function(err) {
       console.error(err);
     });
