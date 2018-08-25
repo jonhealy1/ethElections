@@ -42,7 +42,7 @@ contract Election {
         require(!voters[msg.sender], "User already voted");
 
         //check voting for valid candidate
-       // require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
+        require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
         
         //record that voter has voted
         voters[msg.sender] = true; 
@@ -60,7 +60,7 @@ contract Election {
         require(!voters2[msg.sender], "User already voted");
 
         //check voting for valid candidate
-        //require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
+        require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
         
         //record that voter has voted
         voters2[msg.sender] = true; 
@@ -77,7 +77,7 @@ contract Election {
         require(!voters3[msg.sender], "User already voted");
 
         //check voting for valid candidate
-        //require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
+        require(_candidateId > 0 && _candidateId <= candidatesCount, "Invalid Candidate");
         
         //record that voter has voted
         voters3[msg.sender] = true; 
