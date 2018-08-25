@@ -1,10 +1,10 @@
 # ethElections
 
-Sources: https://truffleframework.com/tutorials/pet-shop /and/ http://www.dappuniversity.com/
+__Sources:__ https://truffleframework.com/tutorials/pet-shop /and/ http://www.dappuniversity.com/
 
-Rinkeby Network: 0x81D2F01fd7d59Aa5675283A5e52446A773134a0E
+__Rinkeby Network:__ This contract is deployed on the Rinkeby Network at address: __0x81D2F01fd7d59Aa5675283A5e52446A773134a0E__
 
-Prequisites: 
+__Instructions:__ 
 
 1. Install Truffle: npm install -g truffle
 2. Install Ganache: npm install -g ganache-cli
@@ -29,9 +29,12 @@ Prequisites:
   2. Adding an issue or candidate was supposed to cost Ether above the transaction fees.
   3. I wanted to have Voters answer general knowledge questions about either the candidates or the issues in order to be delegated votes.
 
-Testing: expected output: <br />
+__Testing:__ Explanations for the testing logic is provided with the code in the file /test/election.js
 
-MacOwners-MBP:ethElections macowner$ truffle test <br />
+*expected output:* <br />
+
+MBP:ethElections macowner$ truffle test <br />
+<br />
 Using network 'development'. <br />
 <br />
   Contract: Election <br />
