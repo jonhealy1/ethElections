@@ -24,10 +24,10 @@ Prequisites:
 
 - Once you choose to either vote or add a candidate you will have to go to MetaMask and submit the transaction. 
 - Sometimes the results don't immediately show and the page will need to be refreshed.
-- At one point this contract had a lot more functionality but because I have almost zero ability with JavaScript I was not able to include these things.
-- 1. I wanted to give Users the option to vote on issues as well as candidates.
-- 2. Adding an issue or candidate was supposed to cost Ether above the transaction fees.
-- 3. I wanted to have Voters answer general knowledge questions about either the candidates or the issues to be delegated votes.
+- At one point this contract had a lot more functionality but because I have almost zero ability with JavaScript I was not able to include these things:
+  1. I wanted to give Users the option to vote on issues as well as candidates.
+  2. Adding an issue or candidate was supposed to cost Ether above the transaction fees.
+  3. I wanted to have Voters answer general knowledge questions about either the candidates or the issues in order to be delegated votes.
 
 
 
