@@ -29,24 +29,22 @@ Prequisites:
   2. Adding an issue or candidate was supposed to cost Ether above the transaction fees.
   3. I wanted to have Voters answer general knowledge questions about either the candidates or the issues in order to be delegated votes.
 
-Testing: expected output:
+Testing: expected output: <br />
 
-MacOwners-MBP:ethElections macowner$ truffle test
-Using network 'development'.
-
-
-
-  Contract: Election
-    ✓ initializes with three candidates
-    ✓ it initializes the candidates with the correct values (54ms)
-    ✓ allows a voter to add a candidate (46ms)
-    ✓ allows a voter to cast first place vote (5 votes) (65ms)
-    ✓ allows a voter to cast second place vote (3 votes) (61ms)
-    ✓ throws an exception for invalid candidates (108ms)
-    ✓ throws an exception for double voting (95ms)
-
-
-  7 passing (483ms)
+MacOwners-MBP:ethElections macowner$ truffle test <br />
+Using network 'development'. <br />
+<br />
+  Contract: Election <br />
+    ✓ initializes with three candidates <br />
+    ✓ it initializes the candidates with the correct values (54ms) <br />
+    ✓ allows a voter to add a candidate (46ms) <br />
+    ✓ allows a voter to cast first place vote (5 votes) (65ms) <br />
+    ✓ allows a voter to cast second place vote (3 votes) (61ms) <br />
+    ✓ throws an exception for invalid candidates (108ms) <br />
+    ✓ throws an exception for double voting (95ms) <br />
+<br />
+<br />
+  7 passing (483ms)<br />
 
 
 
