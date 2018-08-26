@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Election Results</title>
-
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
     <script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script> 
   </head>
   <body>
-
+<!-- Jumbotron -->
       <header class="jumbotron">
           <div class="container">
               <div class="row row-header">
@@ -24,23 +23,23 @@
               </div>
           </div>
       </header>
-
+<!-- Section for loader and Results Table -->
     <section class="bg-primary">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <h2 class="text-left">Options</h2>
             <hr/>
-            
+            <!-- loader -->
             <div id="loader">
               <p class="text-center">Loading...</p>
             </div>
-          
+            <!-- Results Table -->
             <div id="content" style="display: none;">
               <table id="myTable" class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Type</th>
+                    <th scope="col">Number</th>
                     <th scope="col">Name</th>
                     <th scope="col">Votes</th>
                   </tr>
@@ -49,31 +48,17 @@
                 </tbody>
               </table>
             </div>
-            
-
-
           </div>
         </div>
       </div>
-
-    </section>
-
-   
-
-
-
-
-      
-      <br>
-
+    </section> <br>
+<!-- Voter Input Section -->
     <section class="bg-success">
         <br><br>
       <div class="container">
         <div class="row">
-         <!-- <div class="col-sm-4">
-            
-          </div>-->
           <div class="col-sm-6">
+  <!-- Cast 1st. Vote form -->
             <form onSubmit="App.castVote(); return false;">
               <div class="from-group">
                 <label for="candidatesSelect">Select 1st. Candidate: 5 votes</label>
@@ -81,9 +66,8 @@
                 </select>
               </div><br>
               <button type="submit" id="vote1" class="btn btn-primary btn-lg">Vote</button>
-            
             </form><br>
-
+  <!-- Cast 2nd. Vote form -->
             <form onSubmit="App.castVote2(); return false;">
               <div class="from-group">
                 <label for="candidatesSelect2">Select 2nd. Candidate: 3 votes</label>
@@ -91,9 +75,8 @@
                 </select>
               </div><br>
               <button type="submit" id="vote2" class="btn btn-primary btn-lg">Vote</button>
-             
             </form><br>
-
+  <!-- Cast 3rd. Vote form -->
             <form onSubmit="App.castVote3(); return false;">
               <div class="from-group">
                 <label for="candidatesSelect3">Select 3rd. Candidate: 1 vote</label>
@@ -101,13 +84,11 @@
                 </select>
               </div><br>
               <button type="submit" id="vote3" class="btn btn-primary btn-lg">Vote</button>
-            
             </form>
           </div>
-          
+  <!-- Nominate Candidate form -->
           <div class="col-sm-6">
             <form onSubmit="App.addCandidate(); return false;">
-          
               <div class="form-group row">
                   <label form="date" class="col-md-12 col-form-label"
                       >Add Candidate</label>
@@ -117,19 +98,13 @@
                   </div>
               </div>
               <button type="submit" class="btn btn-primary btn-lg">Add</button>
-              
-            </form>
-            <br>
-             
+            </form> <br>
           </div>
         </div>
-      </div>
-      <br><br>
+      </div> <br><br>
     </section>
-
+<!-- Show Account Address -->
     <p id="accountAddress" class="text-center"></p>
-    
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -137,10 +112,6 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
-
-    
-
-
   </body>
 </html>
 
